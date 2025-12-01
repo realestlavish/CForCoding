@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Exercise 2</title>
+</head>
+<body>
+    
+
+    <script>
+        let product1={
+            productName : 'Football',
+            price : 1499,
+        };
+
+        console.log(product1);
+        console.log(product1.price + 500);
+        product1['delivery-time']= '3 days';
+        console.log(product1);
+        
+        let product2={
+            productName : 'Football',
+            price : 1499,
+        };
+
+        function comparer(product1, product2){
+            if(product1.price < product2.price){
+                return product1;
+            } else {
+                return product2;
+            }
+            
+        }
+
+        let cheaperProduct = comparer(product1, product2);
+        console.log('Cheaper product is:', cheaperProduct);
+        console.log('Cheaper product name is:', cheaperProduct.productName);
+
+        function productduplicatechecker(product1,product2) {
+            if (product1.productName===product2.productName && product1.price===product2.price) {
+                return true;
+            }
+            return false;
+        }
+
+        let isDuplicate = productduplicatechecker(product1, product2);
+        console.log(isDuplicate);
+
+        let message= 'ALL CAPS';
+        console.log(message.toLowerCase());
+    </script>
+</body>
+</html>
