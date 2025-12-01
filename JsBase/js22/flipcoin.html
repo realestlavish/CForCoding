@@ -129,15 +129,40 @@
         Flip a Coin to Make Decisions.
     </p>
     <button onclick=" 
-     result = randomNumber >0.5 ? 'Heads':'Tails';
-     
+    flipCoin();
      alert(`Result is ${result} and ${randomNumber}` );
     ">
         Click to Flip the Coin.
     </button>
+
+    <button onclick="scorezero();">
+        Reset Score
+    </button>
     <script>
-        let randomNumber = Math.random();
         let result;
+        let lastFlipResult = JSON.parse(localStorage.getItem('lastFlipResult') || 
+        '{"Heads":0,"Tails":0}');
+    
+    function flipCoin() {
+        let randomNumber = Math.random();
+        result = randomNumber >0.5 ? 'Heads':'Tails';
+        if (result==='Heads') {
+            lastFlipResult['Heads']++;
+        } else {
+            lastFlipResult['Tails']++;
+        }
+
+        
+        console.log('Last Flip Result from localStorage:', lastFlipResult);
+        
+        localStorage.setItem('lastFlipResult', JSON.stringify(lastFlipResult));
+        return {result, randomNumber};
+    }
+
+    function scorezero() {
+        lastFlipResult = {"Heads":0,"Tails":0};
+        localStorage.setItem('lastFlipResult', JSON.stringify(lastFlipResult));
+    }
     </script>
 </body>
 
