@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Function to perform insertion sort on the array. Performs sorting on the left side / shifts big numbers to the right. and inserts the current element at the correct position by comparing it with the left side elements.
 void insertionSort(int arr[], int n)
 {
     for (int i = 0; i <= n - 1; i++)
