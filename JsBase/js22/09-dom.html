@@ -52,7 +52,7 @@
     <button onclick="calculateTotal();">
         Calculate
     </button>
-    <div class="js-cost-result"></div>
+    <div class="js-cost-result"> The Cost is : </div>
 
     <script>
 
@@ -78,7 +78,7 @@
             if (cost < 40) {
                 cost += 10;
             }
-            document.querySelector('.js-cost-result').innerHTML = `$ ${cost}`;
+            document.querySelector('.js-cost-result').innerText = `The Cost is : $ ${cost}`;
         }
     
     </script>
