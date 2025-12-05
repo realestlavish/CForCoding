@@ -4,7 +4,7 @@ using namespace std;
 int partition(vector<int> &arr, int low, int high)
 {
     int pivot = arr[0];
-    int i = low;
+    int i = low - 1;
     int j = high;
     while (i < j)
     {
