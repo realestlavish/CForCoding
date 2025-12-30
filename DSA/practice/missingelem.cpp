@@ -10,7 +10,7 @@ int missingelem(int arr[], int n)
         }
         i++;
     }
-    return -1;
+    return n +1;
 }
 
 int main(){
