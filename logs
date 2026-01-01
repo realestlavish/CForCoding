@@ -1,0 +1,137 @@
+[33mcommit 33275334d956972b84368eceed886e1b61e1e287[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mDSA[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;31morigin/DSA[m[33m)[m
+Author: Lavish <lavish2008kumar@gmail.com>
+Date:   Tue Dec 30 22:46:12 2025 +0530
+
+     n+1
+
+[33mcommit a72d37e973a21cea664315d2846d3091ced1d44a[m
+Author: Lavish <lavish2008kumar@gmail.com>
+Date:   Tue Dec 30 22:38:44 2025 +0530
+
+    DSA Restart D1 P2
+
+[33mcommit be7183526c65498c0b0e343c0b3694fb1298de20[m
+Author: Lavish Kumar <lavish2008kumar@gmail.com>
+Date:   Tue Dec 30 15:48:45 2025 +0530
+
+    DSA Restart DD1
+
+[33mcommit 1312198e744d53b213df9a9606de3d88f5585a94[m
+Author: Lavish Kumar <lavish2008kumar@gmail.com>
+Date:   Sat Dec 20 14:51:27 2025 +0530
+
+    adding union file
+
+[33mcommit 712c7bca4e2fb4ac19f01662654e4a8f024d001f[m
+Author: Lavish Kumar <lavish2008kumar@gmail.com>
+Date:   Wed Dec 10 00:12:30 2025 +0530
+
+    zeros to end optimalpluss
+
+[33mcommit 2a7ca8a771bfb7b65b2cf5efd71f76632d1a028b[m
+Author: Lavish Kumar <lavish2008kumar@gmail.com>
+Date:   Wed Dec 10 00:08:18 2025 +0530
+
+    zeros to end optimal
+
+[33mcommit 14cbe88c400f0dc94eeae969fd9c6e85cb5dcbd7[m
+Author: Lavish Kumar <lavish2008kumar@gmail.com>
+Date:   Sun Dec 7 00:05:39 2025 +0530
+
+    Left Mover Optimal
+
+[33mcommit 8984ef4ddde5a48aafe182f2d82ae9015abf2a6a[m
+Author: Lavish Kumar <lavish2008kumar@gmail.com>
+Date:   Sat Dec 6 23:57:51 2025 +0530
+
+    DSA Exercises
+
+[33mcommit 6f91c2a71d5ad3315ac2fdfc976688b6ef6de758[m
+Author: Lavish Kumar <lavish2008kumar@gmail.com>
+Date:   Fri Dec 5 22:22:16 2025 +0530
+
+    Directory Change
+
+[33mcommit a183625e66452ca752e25cceada1854dd1c07906[m
+Author: Lavish Kumar <lavish2008kumar@gmail.com>
+Date:   Fri Dec 5 17:31:20 2025 +0530
+
+    Overload
+
+[33mcommit 53d5f58d6c57ddbf74ef15c5e84b9c9e5314a11b[m
+Author: Lavish Kumar <lavish2008kumar@gmail.com>
+Date:   Fri Dec 5 17:26:57 2025 +0530
+
+    Sorting Overload
+
+[33mcommit 5472127a88295b6a282ef1b5589c9a97820cc32f[m
+Author: Lavish Kumar <lavish2008kumar@gmail.com>
+Date:   Fri Dec 5 12:00:43 2025 +0530
+
+    New W3
+
+[33mcommit 054773a02304d1ce19f9ebac1cbd50d9caad40bd[m
+Author: Lavish Kumar <lavish2008kumar@gmail.com>
+Date:   Fri Dec 5 10:30:35 2025 +0530
+
+    Test Code and Debugger
+
+[33mcommit aa390904b9dcc6f690556917a4fa22330255e0e7[m
+Author: Lavish Kumar <lavish2008kumar@gmail.com>
+Date:   Thu Dec 4 00:48:15 2025 +0530
+
+    Added Documentation in insertionsort & mergeSort Code
+
+[33mcommit 61a91dc03f558da42f6f15e5f8fd90df65528f6e[m
+Author: Lavish Kumar <lavish2008kumar@gmail.com>
+Date:   Wed Dec 3 23:52:53 2025 +0530
+
+     Directory Name Change
+
+[33mcommit 66be4be158db2cbea339bbf88583013c7f92611e[m
+Author: Lavish Kumar <lavish2008kumar@gmail.com>
+Date:   Wed Dec 3 23:50:40 2025 +0530
+
+     Directory Change
+
+[33mcommit f69afe1477387b2b31d267b08f6a78f2d4495fbc[m
+Author: Lavish Kumar <lavish2008kumar@gmail.com>
+Date:   Wed Dec 3 23:41:15 2025 +0530
+
+    Sorting P1
+
+[33mcommit 1f0dfb7e79840cd9a8bd6ee04a24bfb3391e3ca5[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Lavish Kumar <lavish2008kumar@gmail.com>
+Date:   Wed Dec 3 18:25:29 2025 +0530
+
+    innerText vs innerHTML Done.
+
+[33mcommit e952c2070ba3828992ded6444d702673724e70b0[m
+Author: Lavish Kumar <lavish2008kumar@gmail.com>
+Date:   Wed Dec 3 02:33:53 2025 +0530
+
+    RPS - New Functionality Added and 09-DOM - Initial Commit with DOM
+
+[33mcommit a19a0f64e4ee72a811f51146fc08483689ac295c[m
+Author: Lavish Kumar <lavish2008kumar@gmail.com>
+Date:   Tue Dec 2 00:29:03 2025 +0530
+
+    new exercise of objects
+
+[33mcommit 60aad558c058bfde9dc06e7feb8c34129e52c437[m
+Author: Lavish Kumar <lavish2008kumar@gmail.com>
+Date:   Tue Dec 2 00:25:42 2025 +0530
+
+    added score storage
+
+[33mcommit 52ee1ceed5f9190717ea25bb245856042c01556c[m
+Author: Lavish Kumar <lavish2008kumar@gmail.com>
+Date:   Sun Nov 30 13:46:45 2025 +0530
+
+    Deleted booleans.html and functions.html
+
+[33mcommit 2bfcd06e42e913bd716ea2bf03d38a72afb2599d[m
+Author: Lavish Kumar <lavish2008kumar@gmail.com>
+Date:   Sun Nov 30 13:43:13 2025 +0530
+
+    First Commit
