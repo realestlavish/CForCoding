@@ -29,6 +29,30 @@ int sumtokpositives(int arr[], int k, int n)
     }
     return maxi;
 }
+
+int sumtokstriver(int arr[], int k, int n)
+{
+    map<long long, int> presummp;
+    int maxLen = 0;
+    long long sum = 0;
+    for (int i = 0; i < n; i++)
+    {
+        sum += arr[i];
+        if (sum == k)
+        {
+            maxLen = max(maxLen, i + 1);
+        }
+        int rem = sum - k;
+        if (presummp.find(rem) != presummp.end())
+        {
+            int len = i - presummp[rem];
+            maxLen = max(maxLen, len);
+        }
+        presummp[sum] = i;
+    }
+    return maxLen;
+}
+
 int main()
 {
     int arr[] = {-3, 2, 1};
