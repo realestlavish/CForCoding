@@ -13,7 +13,7 @@ int Floor(vector<int> arr, int n, int target)
         int mid = (low + high) / 2;
         if (arr[mid] <= target)
         {
-            ans = mid;
+            ans = arr[mid];
             low = mid + 1;
         }
         else
