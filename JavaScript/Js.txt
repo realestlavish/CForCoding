@@ -1,0 +1,4 @@
+push()- pushes at last element.
+pop() - removes last element.
+shift()- removes first element.
+unshift()- inserts at first element.
