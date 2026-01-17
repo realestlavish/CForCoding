@@ -11,7 +11,7 @@ int smallestElement(vector<int> arr)
     }
     return ans;
 }
-
+//we find the sorted part in the array and store its minimum and compare it with the minimmum found so far, and do the same with the unsorted part until we find the minimum element
 int smallElRotater(vector<int> arr)
 {
     int low = 0;
