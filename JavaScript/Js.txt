@@ -3,4 +3,20 @@ pop() - removes last element.
 shift()- removes first element.
 unshift()- inserts at first element.
 Equality Operator ~ " === " - No Type Conversion, " == " - Type Conversion.
-InEquality Operator ~ " !== " - No Type Conversion, " klkklklkjk;= " - Type Conversion.
+InEquality Operator ~ " !== " - No Type Conversion, "!= " - Type Conversion.
+Do While loop - Runs 1 time and then checks the condition.
+Random Numbers in a range can be obtained by this eqn - (Math.Random()*(MaxNum-MinNum+1)*MinNum).
+Conversion to Int from Str - parseInt(string).
+Conversion to Int from Binary - parseInt(string,2). 2= log base
+Ternary Operators - return (a === b) true ? false;
+use Object.freeze(): to fix the object values.
+Arrow functions
+Rest Operator
+Spread Operator
+Assigning Values from Array or other Datatype - Destructuring of Data Types
+var Array={x:22,y:23z:25};
+const{x:a,y:b,z:c}=Array; //value of x is assigned to a and same to b & c. a=22,b=23,c=25.
+
+constructor functions
+getter and setter
+Export & Import
