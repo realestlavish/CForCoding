@@ -36,13 +36,11 @@ int binarykoko(vector<int> &arr, int n, int target)
     while (low <= high)
     {
         int mid = (low + high) / 2;
-        long long sum = 0;
-        for (int j = 0; j < n; j++)
-            if (hourcounter(arr, mid) <= target)
-            {
-                ans = mid;
-                high = mid - 1;
-            }
+        if (hourcounter(arr, mid) <= target)
+        {
+            ans = mid;
+            high = mid - 1;
+        }
         low = mid + 1;
     }
     return ans;

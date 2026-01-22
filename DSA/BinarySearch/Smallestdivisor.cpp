@@ -35,14 +35,13 @@ int binarydivisor(vector<int> &arr, int n, int limit)
     while (low <= high)
     {
         int mid = (low + high) / 2;
-        long long sum = 0;
-        for (int j = 0; j < n; j++)
-            if (divfounder(arr, mid, n) <= limit)
-            {
-                ans = mid;
-                high = mid - 1;
-            }
-        low = mid + 1;
+        if (divfounder(arr, mid, n) <= limit)
+        {
+            ans = mid;
+            high = mid - 1;
+        }
+        else
+            low = mid + 1;
     }
     return ans;
 }
@@ -50,7 +49,7 @@ int binarydivisor(vector<int> &arr, int n, int limit)
 int main()
 {
     int N = 4;
-    vector<int> arr = {1,2,3,4,5};
+    vector<int> arr = {1, 2, 3, 4, 5};
     int limit = 8;
     int result = divisorbasic(arr, N, limit);
     if (result == -1)
