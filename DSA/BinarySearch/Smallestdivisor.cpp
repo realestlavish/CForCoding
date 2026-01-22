@@ -49,8 +49,8 @@ int binarydivisor(vector<int> &arr, int n, int limit)
 
 int main()
 {
-    int N = 5;
-    vector<int> arr = {1, 2, 3, 4, 5};
+    int N = 4;
+    vector<int> arr = {1,2,3,4,5};
     int limit = 8;
     int result = divisorbasic(arr, N, limit);
     if (result == -1)
