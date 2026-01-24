@@ -17,6 +17,7 @@ int missingbinary(vector<int> &vec, int k, int n)
     }
     return low + k;
 }
+//when high goes lesser than low, the missing number is at right of the high,so we add the MORE(k-missing) to high to find the exact number.
 //we use low+k or we can use high+1+k both are same, low and high go to opposite polarity, ans = vec[high]+more, more = k-(missing till high).
 
 int main()
