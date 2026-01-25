@@ -12,7 +12,8 @@ int sumfinder(vector<int> &vec, int sumlimit)
             tempsum = vec[i];
             parts++;
         }
-        tempsum += vec[i];
+        else
+            tempsum += vec[i];
     }
     return parts;
 }
@@ -43,7 +44,8 @@ int splitarraylargesum(vector<int> arr, int n, int k)
         {
             high = mid - 1;
         }
-        else low = mid + 1;
+        else
+            low = mid + 1;
     }
 
     return low;
@@ -54,7 +56,7 @@ int main()
     int N = 5;
     vector<int> a = {1, 2, 3, 4, 5};
     int k = 3;
-   // cout << "Result from basicsplitarraylargesum: " << basicsplitarraylargesum(a, N, k) << endl;
+    cout << "Result from basicsplitarraylargesum: " << basicsplitarraylargesum(a, N, k) << endl;
     cout << "Result from splitarraylargesum: " << splitarraylargesum(a, N, k) << endl;
     return 0;
 }
