@@ -1,5 +1,0 @@
-Attributes used to modify html tags
-href = reference to another website using link
-target = determines if the link will open in the same tab or new tab. if target == blank, link will open in same tab. if target == "_blank" link will open in new tab.
-text element
-link - void tag, rel href.
