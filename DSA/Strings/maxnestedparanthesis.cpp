@@ -7,14 +7,8 @@ int NestFinder(string s)
     int maxcnt = 0;
     for (int i = 0; i < s.length(); i++)
     {
-        if (cnt < 0)
-            cnt = 0;
-        if (s[i] == '(')
-            cnt++;
-        maxcnt = max(cnt, maxcnt);
-        if (s[i] == ')')
-            cnt--;
-        
+        if (s[i] == '('){cnt++; maxcnt = max(cnt, maxcnt);}
+        else if (s[i] == ')') cnt--;
     }
     return maxcnt;
 }
