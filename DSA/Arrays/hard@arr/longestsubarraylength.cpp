@@ -18,7 +18,7 @@ int longestSubarrayLength(vector<int> &vec)
         }
         else if (mp.find(sum) != mp.end())
         {
-            maxi = max(maxi, i - mp[sum]); // ✅ FIXED
+            maxi = max(maxi, i - mp[sum]); 
         }
         else
         {
