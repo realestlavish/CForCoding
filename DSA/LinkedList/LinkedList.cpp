@@ -10,13 +10,13 @@ public:
 
     Node(int data)
     {
-        this->data = data;
-        this->next = nullptr;
+        data = data;
+        next = nullptr;
     }
     Node(int data, Node *next)
     {
-        this->data = data;
-        this->next = next;
+        data = data;
+        next = next;
     }
 };
 
