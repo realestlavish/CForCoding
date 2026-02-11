@@ -154,7 +154,7 @@ public:
         while (tempo != NULL)
         {
             cnt++;
-            if (cnt==k)
+            if (cnt == k)
             {
                 break;
             }
@@ -167,13 +167,31 @@ public:
         return head;
     }
 
-     static Node *Insertb4Node(Node *node, int val)
+    static Node *Insertb4Node(Node *node, int val)
     {
-        Node*prev=node->back;
-        Node *nwNode =new Node(val,node,prev);
-        node->back=nwNode;
-        prev->next=nwNode;
+        Node *prev = node->back;
+        Node *nwNode = new Node(val, node, prev);
+        node->back = nwNode;
+        prev->next = nwNode;
         return nwNode;
+    }
+
+    static Node *ReverseingLL(Node *head)
+    {
+        if (head == NULL || head->next == NULL)
+        {
+            return head;
+        }
+
+        Node *current = head;
+        Node *backnode = NULL;
+        while (current != NULL)
+        {
+            backnode = current->back;
+            current->back = current->next;
+            current->next = backnode;
+        }
+        return backnode->back;
     }
 };
 
