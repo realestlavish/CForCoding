@@ -6,16 +6,19 @@ class Node
 public:
     int data;
     Node *next;
+    Node *back;
 
     Node(int data)
     {
-        this->data = data;
-        this->next = nullptr;
+        data = data;
+        next = nullptr;
+        back = nullptr;
     }
-    Node(int data, Node *next)
+    Node(int data, Node *next, Node *back)
     {
-        this->data = data;
-        this->next = next;
+        data = data;
+        next = next;
+        back = back;
     }
 };
 
