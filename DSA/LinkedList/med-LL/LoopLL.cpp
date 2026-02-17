@@ -50,6 +50,7 @@ public:
                 return true;
             }
             mp[temp] = 1;
+            temp=temp->next;
         }
         return false;
     }
