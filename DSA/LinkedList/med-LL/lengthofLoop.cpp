@@ -58,6 +58,8 @@ public:
         return 0;
     }
 
+    /* Attaches the slow ptr to a node and then counts the rotation of LL Nodes until slow ==fast again 
+    counter = number of nodes in LOOP in LL, so length of loop */
     static int LenOptimal(Node *head)
     {
         Node *slow = head;

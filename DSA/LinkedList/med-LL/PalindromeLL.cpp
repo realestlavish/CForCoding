@@ -86,6 +86,12 @@ public:
         return true;
     }
 
+    /* S1- tracks the middle.
+    S2- Reverses the LL after the middle
+    S3- Compares the reversed one w the non reversed in front 
+    S4- if passes then palindrome else not
+    S5- changes to original LL 
+    */
     static bool LenOptimal(Node *head)
     {
         Node *temp = head;
