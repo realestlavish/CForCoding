@@ -124,9 +124,13 @@ public:
         // Recurse to the end
         int carry = addOneUtil(node->next);
         int sum = node->data + carry;
-        node->data = sum % 10;
+        if (sum < 10)
+        {
+            return 0;
+            node->data = 0;
+        }
         // Return new carry
-        return sum / 10;
+        return 1;
     }
 
     // Function to add one to the number represented by the linked list
@@ -146,27 +150,3 @@ public:
         return head;
     }
 };
-}
-}
-;
-int main()
-{
-    Node *head = nullptr;
-    LinkedList ll;
-    Solution sol;
-
-    // Example: Number 129 (1 -> 2 -> 9)
-    head = ll.append(head, 1);
-    head = ll.append(head, 2);
-    head = ll.append(head, 9);
-
-    cout << "Original Number: ";
-    ll.printList(head);
-
-    head = sol.addOne(head);
-
-    cout << "After Adding One: ";
-    ll.printList(head);
-
-    return 0;
-}
