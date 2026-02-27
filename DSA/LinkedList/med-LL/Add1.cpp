@@ -92,7 +92,9 @@ public:
         Node *temphead = newhead;
         while (temphead != NULL)
         {
-            temphead->data = temphead->data + carry;
+            int sum = temphead->data + carry;
+            temphead->data = sum % 10;
+            carry = sum / 10;
             if (temphead->data < 10)
             {
                 carry = 0;
@@ -108,8 +110,8 @@ public:
         if (carry == 1)
         {
             Node *newNode = new Node(1);
-            head = RecursiveReverser(newhead);
-            newNode->next = head;
+            Node *finalHead = RecursiveReverser(newhead);
+            newNode->next = finalHead;
             return newNode;
         }
         return RecursiveReverser(newhead);
