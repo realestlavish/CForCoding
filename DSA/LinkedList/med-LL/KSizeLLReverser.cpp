@@ -69,7 +69,6 @@ public:
         Node *temp = head;
         Node *nextNode = NULL;
         Node *prevNode = NULL;
-        Node *newHead = NULL;
         while (temp != NULL)
         {
             Node *kelement = kthelement(temp, k);
@@ -81,7 +80,7 @@ public:
             kelement->next = NULL;
             RecursiveReverser(temp);
             if (temp == head)
-                newHead = kelement;
+                head = kelement;
             else
             {
                 prevNode->next = kelement;
@@ -89,6 +88,6 @@ public:
             prevNode = temp;
             temp = nextNode;
         }
-        return newHead;
+        return head;
     }
 };
