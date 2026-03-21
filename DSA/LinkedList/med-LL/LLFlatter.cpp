@@ -42,10 +42,10 @@ public:
         }
         return head;
     }
-/*Tc -> (2MN)
-Sc-> O(N)
-we can also use extra space for better solution 
-*/
+    /*Tc -> (2MN)
+    Sc-> O(N)
+    we can also use extra space for better solution
+    */
     static Node *Merger(Node *list1, Node *list2)
     {
         Node *dummy = new Node(-1);
@@ -82,14 +82,13 @@ we can also use extra space for better solution
         }
     }
 
-        static Node *OptimalFlatter(Node * head)
+    static Node *OptimalFlatter(Node *head)
+    {
+        if (head == NULL || head->next == NULL)
         {
-            Node *temp = head;
-            if (head == NULL || head->next == NULL)
-            {
-                return head;
-            }
-            Node *mergedhead = OptimalFlatter(head->next);
-            return Merger(head, mergedhead);
+            return head;
         }
-    };
+        Node *mergedhead = OptimalFlatter(head->next);
+        return Merger(head, mergedhead);
+    }
+};
