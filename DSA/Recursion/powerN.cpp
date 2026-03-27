@@ -3,21 +3,18 @@ using namespace std;
 
 double power(double x, int n){
     double ans=1.0;
-    long long  pow=n;
-    int check=0;
-    if(pow<0) x=-1*x;
-    while(pow>0){
-        if (n%2==1)
-        {
-            ans=x*x;
-            pow=pow-1;
-        }
-        else {
-            x=x*x;
-            pow=pow/2;
-        }
+    long long pow = n;
+    if(pow < 0){
+        x = 1.0 / x;
+        pow = -pow;
     }
-    if (n>0)ans= (double) 1.0/(double) ans;
+    while(pow > 0){
+        if(pow % 2 == 1){
+            ans = ans * x;
+        }
+        x = x * x;
+        pow = pow / 2;
+    }
     return ans;
 }
 
@@ -31,7 +28,7 @@ int main()
     if (!(cin >> x >> n))
         return 0;
 
-    double ans = powerhelper(x, n);
+    double ans = power(x, n);
     cout << ans << '\n';
     return 0;
 }
