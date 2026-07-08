@@ -3,8 +3,19 @@
 #include <stdio.h>
 using namespace std;
 
-void Combo2( int index,string digits,vector<string> &vec, string &,string combos[])
+void Combo2( int index,string digits,vector<string> &vec, string &s,string combos[])
 {
+    if(index==digits.size())
+    {
+        vec.push_back(s);
+        return;
+    }
+    int digit = digits[index]-'0';
+    string letters = combos[digit];
+    for(int i=0; i<letters.size(); i++)
+    {
+        Combo2(index+1,digits,vec,s + combos[digit][i],combos);
+    }
 }
 
 vector<string> manager(string digits)
