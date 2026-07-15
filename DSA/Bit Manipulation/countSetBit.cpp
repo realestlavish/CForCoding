@@ -44,7 +44,7 @@ int countSetBit3(int n)
 int main()
 {
     int n = 13;
-    int result = countSetBit(n);
+    int result = countSetBit1(n);
     cout << "Result: " << result << endl;
     return 0;
 }
