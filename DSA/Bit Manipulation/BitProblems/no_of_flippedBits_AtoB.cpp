@@ -40,7 +40,7 @@ int no_of_flippedBits_AtoB(int a, int b)
 // Fast Solution
 int aTOb_flippedBits(int start, int goal)
 {
-    /* the XOR leaves us with the bits (1) that need to be counted (bits that need to be flipped to convert A to B). then (num & 1) checks if the RSB ==1, if it is ==1 then, the & operation gives us 1, which is added to cnt. and right shift operation replaces the last Bit to compare with next LSB.*/i
+    /* the XOR leaves us with the bits (1) that need to be counted (bits that need to be flipped to convert A to B). then (num & 1) checks if the RSB ==1, if it is ==1 then, the & operation gives us 1, which is added to cnt. and right shift operation replaces the last Bit to compare with next LSB. */
     int num = (start ^ goal);
     int cnt = 0;
     for (int i = 0; i < 32; i++)
