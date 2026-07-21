@@ -1,19 +1,3 @@
-from dotenv import load_dotenv
-import os
-
-load_dotenv()
-
-from langchain.chat_models import init_chat_model
-model = init_chat_model(
-    model="gemini-2.5-flash",
-    model_provider="google_genai",
-    max_retries=5
-)
-ans=model.invoke("information about twr supercat ")
-
-print(ans.content)
-
-
 #Standalone model with Conversation
 from dotenv import load_dotenv
 import os
