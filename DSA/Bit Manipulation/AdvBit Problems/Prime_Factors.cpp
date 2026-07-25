@@ -1,16 +1,10 @@
 #include <iostream>
-#include <vector>
-#include <algorithm>
 #include <unordered_set>
 using namespace std;
 
-#include <iostream>
-#include <unordered_set>
-using namespace std;
-
-unordered_set<int> PrimeFactors(int n)
+vector<int> PrimeFactors(int n)
 {
-    unordered_set<int> primeSet;
+    vector<int> primeSet;
 
     for (int div = 2; div*div <= n; div++)
     {
@@ -34,18 +28,8 @@ int main()
 {
     int n = 780;
 
-    unordered_set<int> res = PrimeFactors(n);
+    vector<int> res = PrimeFactors(n);
 
     for (int x : res)
         cout << x << " ";
-}
-
-int main()
-{
-    int n = 65;
-    unordered_set<int> res = PrimeFactors(n);
-    for (int num : res)
-    {
-        cout << num << " ";
-    }
 }
