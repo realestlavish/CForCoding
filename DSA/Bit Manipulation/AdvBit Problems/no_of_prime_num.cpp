@@ -20,8 +20,6 @@ vector<int> Prime_nums(vector<vector<int>> arr)
 
     // Step 1: Use the Sieve of Eratosthenes
     vector<char> is_primee(maxi + 1, 1);
-    
-    // FIX: 0 and 1 are not prime numbers
     is_primee[0] = 0;
     is_primee[1] = 0;
 
@@ -43,7 +41,7 @@ vector<int> Prime_nums(vector<vector<int>> arr)
         primeCount[i] = primeCount[i - 1];
         if (is_primee[i])
         {
-            primeCount[i]++; // FIX: Added the increment and semicolon
+            primeCount[i]++;
         }
     }
 
@@ -67,5 +65,5 @@ int main()
     vector<int> res = Prime_nums(n);
 
     for (int x : res)
-        cout << x << " "; // Output will correctly be: 3 2
+        cout << x << " ";
 }
