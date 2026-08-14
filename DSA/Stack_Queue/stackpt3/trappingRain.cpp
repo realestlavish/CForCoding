@@ -36,5 +36,5 @@ int main()
 {
     vector<int> vec = {4, 2, 0, 3, 2, 5};
     int res = rainTrapper(vec);
-    cout << res << endl;
+    cout << res ;
 }
