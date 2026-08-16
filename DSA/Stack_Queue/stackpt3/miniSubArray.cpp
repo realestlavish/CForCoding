@@ -53,7 +53,7 @@ int miniSubSumBetter(vector<int> arr)
     }
     return total;
 }
-#function to find nextsmaller element
+// function to find nextsmaller element
 vector<int> findNSE(vector<int> &arr)
 {
 
