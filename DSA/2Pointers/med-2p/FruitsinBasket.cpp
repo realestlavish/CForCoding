@@ -2,15 +2,13 @@
 #include <vector>
 using namespace std;
 
-int FruitsinBasket(vector<int> &arr)
+int FruitsinBasket(vector<int> &arr) // Time Complexity: O(n)  Space Complexity: O(1)
 {
     int n = arr.size();
     int left = 0;
     unordered_map<int, int> fruitCount;
     int right = 0;
-    int basketCount = 2;
     int maxFruits = 0;
-    int cnt = 0;
     while (right < n)
     {
         if (fruitCount.find(arr[right]) != fruitCount.end())
@@ -19,16 +17,15 @@ int FruitsinBasket(vector<int> &arr)
         }
         else
         {
-            if (fruitCount.size() < basketCount)
+            if (fruitCount.size() < 2)
             {
                 fruitCount[arr[right]] = 1;
             }
             else
             {
-                while (fruitCount.size() >= basketCount)
+                while (fruitCount.size() >= 2)
                 {
                     fruitCount[arr[left]]--;
-                    cnt--;
                     if (fruitCount[arr[left]] == 0)
                     {
                         fruitCount.erase(arr[left]);
@@ -38,9 +35,8 @@ int FruitsinBasket(vector<int> &arr)
                 fruitCount[arr[right]] = 1;
             }
         }
-        cnt++;
         right++;
-        maxFruits = max(maxFruits, cnt);
+        maxFruits = max(maxFruits, right - left + 1);
     }
     return maxFruits;
 }
