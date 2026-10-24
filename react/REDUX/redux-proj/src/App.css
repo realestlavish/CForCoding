@@ -1,0 +1,66 @@
+.counter {
+  width: min(100% - 2rem, 36rem);
+  margin: auto;
+  padding: 3rem 1rem;
+}
+
+.counter__value {
+  display: block;
+  margin: 1.5rem 0;
+  color: var(--text-h);
+  font-family: var(--mono);
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.counter__controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: end;
+  gap: 0.75rem;
+}
+
+.counter__button {
+  min-height: 2.75rem;
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--accent-border);
+  border-radius: 0.5rem;
+  background: var(--accent-bg);
+  color: var(--text-h);
+  font: inherit;
+  cursor: pointer;
+}
+
+.counter__button:hover:not(:disabled) {
+  background: var(--accent-border);
+}
+
+.counter__button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.counter__amount-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.counter__amount-form label {
+  flex-basis: 100%;
+}
+
+.counter__amount-form input {
+  box-sizing: border-box;
+  width: 5rem;
+  min-height: 2.75rem;
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  background: var(--bg);
+  color: var(--text-h);
+  font: inherit;
+}
