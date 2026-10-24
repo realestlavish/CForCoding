@@ -17,8 +17,8 @@ string minWindow(string s, string t)
         if (sMap[s[r]] > 0)
         {
             cnt++;
-            sMap[s[r]]--;
         }
+        sMap[s[r]]--;
         while (cnt == m)
         {
             if (r - l + 1 < minlen)
@@ -26,7 +26,7 @@ string minWindow(string s, string t)
                 minlen = r - l + 1;
                 resStart = l;
             }
-            sMap[s[l]]--;
+            sMap[s[l]]++;
             if (sMap[s[l]] > 0)
             {
                 cnt--;
@@ -35,5 +35,5 @@ string minWindow(string s, string t)
         }
         r++;
     }
-    return resStart == -1 ? " " : s.substr(resStart, minlen);
+    return resStart == -1 ? "" : s.substr(resStart, minlen);
 }
